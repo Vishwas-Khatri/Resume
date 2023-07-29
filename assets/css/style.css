@@ -1567,6 +1567,9 @@ form.ts-labels-inside-input .form-group label.focused,
   transition: 0.8s ease;
   height: 100%;
   width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  min-height: 100%;
 }
 
 /*-------------------------------------------
@@ -2944,4 +2947,7 @@ E. Template Specific Elements
 }
 .progress .progress-bar.premier-line {
   background-color: #918dff;
+}
+.swiper-slide {
+  height: auto;
 }
