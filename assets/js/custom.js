@@ -505,3 +505,23 @@ $("[data-fancybox]").fancybox({
   },
   backFocus: false,
 });
+
+var colWidth = $(".single-service-client").width();
+
+window.onresize = function () {
+  var colWidth = $(".single-service-client").width();
+};
+console.log(colWidth);
+
+var $grid = $(".ts-gallery").masonry({
+  // options
+  itemSelector: ".single-service-client",
+  columnWidth: ".single-service-client",
+  // percentPosition: true,
+  gutter: 20,
+  fitWidth: true,
+});
+
+$grid.imagesLoaded().progress(function () {
+  $grid.masonry("layout");
+});

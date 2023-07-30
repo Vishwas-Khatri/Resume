@@ -2952,3 +2952,8 @@ E. Template Specific Elements
   width: 100% !important;
   height: auto;
 }
+.single-service-client {
+  width: 262px;
+  height: auto;
+  margin-bottom: 20px;
+}
