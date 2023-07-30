@@ -2953,7 +2953,22 @@ E. Template Specific Elements
   height: auto;
 }
 .single-service-client {
-  width: 262px;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
+}
+@media all and (min-width: 767px) {
+  .single-service-client {
+    width: 216.66667px;
+  }
+}
+@media all and (min-width: 992px) {
+  .single-service-client {
+    width: 217.66667px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .single-service-client {
+    width: 262.5px;
+  }
 }
